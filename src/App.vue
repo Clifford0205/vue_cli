@@ -6,30 +6,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <router-link class="nav-link" :to="{ name: '首頁' }"
-              >Home</router-link
-            >
+            <router-link class="nav-link" :to="{ name: '首頁' }">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/page">Link</router-link>
+            <div class="container">
+              <router-link class="nav-link" to="/page">Page</router-link>
+            </div>
           </li>
         </ul>
       </div>
     </nav>
-    <img src="./assets/logo.png" />
-    <router-view></router-view>
-    <!-- <HelloWorld /> -->
-
-    <!-- <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div> -->
+    <router-view name="menu"></router-view>
+    <div class="container">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -40,12 +30,12 @@ export default {
   name: "App",
   components: {
     HelloWorld
-  },
-  created() {
-    this.$http
-      .get("https://randomuser.me/api/")
-      .then(response => console.log(response.data));
   }
+  // created() {
+  //   this.$http
+  //     .get("https://randomuser.me/api/")
+  //     .then(response => console.log(response.data));
+  // }
 };
 </script>
 
