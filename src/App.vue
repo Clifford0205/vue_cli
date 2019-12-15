@@ -9,9 +9,7 @@
             <router-link class="nav-link" :to="{ name: '首頁' }">Home</router-link>
           </li>
           <li class="nav-item">
-            <div class="container">
-              <router-link class="nav-link" to="/page">Page</router-link>
-            </div>
+            <router-link class="nav-link" to="/page">Page</router-link>
           </li>
         </ul>
       </div>
@@ -41,4 +39,11 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap";
+@import "@/all.scss";
+
+.container {
+  @include lg {
+    background-color: red;
+  }
+}
 </style>

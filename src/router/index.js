@@ -27,7 +27,7 @@ export default new VueRouter({
             // component:Page,
             components:{
                 default:Page,
-                meun:Menu,
+                menu:Menu,
             },
             children:[
                 {
