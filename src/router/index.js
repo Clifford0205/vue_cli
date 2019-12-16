@@ -15,10 +15,12 @@ Vue.use(VueRouter)
 
 
 export default new VueRouter({
+    // mode:'history',    //開發時先不要打開
+    linkActiveClass:'active',
     routes:[
         {
             name:'首頁', //元件的呈現名稱
-            path:'/', //對應的虛擬路徑
+            path:'/index', //對應的虛擬路徑
             component:Home, //對應的元件
         },
         {

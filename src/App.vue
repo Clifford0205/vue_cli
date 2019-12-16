@@ -5,7 +5,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <router-link class="nav-link" :to="{ name: '首頁' }">Home</router-link>
           </li>
           <li class="nav-item">
@@ -38,8 +38,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~bootstrap/scss/bootstrap";
-@import "@/all.scss";
+@import "./assets/all";
 
 .container {
   @include lg {

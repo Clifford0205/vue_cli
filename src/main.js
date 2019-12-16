@@ -5,6 +5,7 @@ import App from './App'
 import axios from 'axios' //主要ＡＪＡＸ套件
 import VueAxios from 'vue-axios'//將它轉為ＶＵＥ的套件
 import router from './router';
+import 'bootstrap';
 
 Vue.use(VueAxios, axios)
 Vue.config.productionTip = false

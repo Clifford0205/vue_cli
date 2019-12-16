@@ -1,4 +1,4 @@
-  <template>
+<template>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
@@ -17,7 +17,9 @@
       </li>
       <br />
       <li>
-        <a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a>
+        <a href="http://vuejs-templates.github.io/webpack/" target="_blank"
+          >Docs for This Template</a
+        >
       </li>
     </ul>
     <h2>Ecosystem</h2>
@@ -32,13 +34,17 @@
         <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
       </li>
       <li>
-        <a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a>
+        <a href="https://github.com/vuejs/awesome-vue" target="_blank"
+          >awesome-vue</a
+        >
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import $ from "jquery";
+
 export default {
   name: "HelloWorld",
   data() {
